@@ -81,27 +81,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'realest_estate.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'realest_estate',
-        'USER': 'postgres',
-        'PASSWORD': 'pd4NRe[Pb&R\RMxkFz9\kHB9&{rN',
-        'HOST': 'localhost',
-        'PORT': '5432',
-
-    }
-}
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'archisolitude@gmail.com'
-EMAIL_HOST_PASSWORD = 'ohghyglxxciztebb'
-EMAIL_USE_TLS = True
 
 
 # Password validation
