@@ -81,7 +81,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'realest_estate.wsgi.application'
 
 
-
+DATABASES = {
+    'default': {
+        
+    }
+}
 
 
 # Password validation
@@ -145,3 +149,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 FILE_UPLOAD_PERMISSIONS = 0o640
 
 AUTH_USER_MODEL = 'accounts.UserAccount'
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
